@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name=“viewport” content=“width=device-width, initial-scale=1">
-<style>
-* {
- box-sizing: border-box;
-}
-/* Create three equal columns that floats next to each other */
-.column {
- float: left;
- width: 33.33%;
- padding: 10px;
-}
-img {
- height: 200px;
- width: 200px;
- object-fit: cover;
- border: 1px solid #ddd;
- border-radius: 4px;
- padding: 5px;
- justify: center;
-}
-h1{
-font-size: 40px;
-font-family: helvetica;
-text-align: center;
-}
-h3{
-font-size:20px;
-font-family: helvetica;
-margin: 5px 0px 2px;
-text-align: center;
-}
-h3:hover{
-color: pink;
-}
-p{
-font-size: 15px;
-text-align: center;
-margin: 0px;
-}
-</style>
-</head>
-<body>
-
- 
-
-     <a href="#" class="button" button id="quiz-button">What do you want to make?</a>
-     <script src="recipe_quiz.js"></script>
-     </div>
-                                                                   
-                                                                   <h1>Recipes</h1>
-<div class=“row”>
- <div class=“column”>
- <center><img src=“http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTM4BjsHwjTxqbvQFKnlkKzswhZB2C6NHxmuQum_Cr9zKPFWV-tUnCoakh0AVXVlRPfkvnybFBaSUqWwgI”/></center>
-  <h3>Recipe 1</h3>
-  <p><em>Cooking time</em></p>
- </div>
- <div class=“column”>
-<center><img src=“http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTM4BjsHwjTxqbvQFKnlkKzswhZB2C6NHxmuQum_Cr9zKPFWV-tUnCoakh0AVXVlRPfkvnybFBaSUqWwgI”/></center>
-  <h3>Recipe 2</h3>
-  <p><em>Cooking time</em></p>
- </div>
- <div class=“column”>
-<center><img src=“http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTM4BjsHwjTxqbvQFKnlkKzswhZB2C6NHxmuQum_Cr9zKPFWV-tUnCoakh0AVXVlRPfkvnybFBaSUqWwgI”/></center>
-  <h3>Recipe 3</h3>
-  <p><em>Cooking time</em></p>
- </div>
-</div>
-</body>
+  <head>
+    <title>Quiz: Lasagna, Pizza, or Cake?</title>
+  </head>
+  <body>
+    <h1>Quiz: Lasagna, Pizza, or Cake?</h1>
+    <p>Answer these questions to find out what you should make for dinner/dessert:</p>
+    
+    <form id="quiz-form">
+      <div>
+        <label for="question-1">What type of food are you in the mood for?</label>
+        <br>
+        <input type="radio" id="answer-1a" name="answer-1" value="a">
+        <label for="answer-1a">Something meaty</label>
+        <br>
+        <input type="radio" id="answer-1b" name="answer-1" value="b">
+        <label for="answer-1b">Something savoury</label>
+        <br>
+        <input type="radio" id="answer-1c" name="answer-1" value="c">
+        <label for="answer-1c">Something sweet</label>
+      </div>
+      
+      <div>
+        <label for="question-2">How much time do you have to cook?</label>
+        <br>
+        <input type="radio" id="answer-2a" name="answer-2" value="a">
+        <label for="answer-2a">Less than 30 minutes</label>
+        <br>
+        <input type="radio" id="answer-2b" name="answer-2" value="b">
+        <label for="answer-2b">30-60 minutes</label>
+        <br>
+        <input type="radio" id="answer-2c" name="answer-2" value="c">
+        <label for="answer-2c">More than 60 minutes</label>
+      </div>
+      
+      <div>
+        <label for="question-3">What ingredients do you have on hand?</label>
+        <br>
+        <input type="radio" id="answer-3a" name="answer-3" value="a">
+        <label for="answer-3a">Pasta, ground beef, tomato sauce</label>
+        <br>
+        <input type="radio" id="answer-3b" name="answer-3" value="b">
+        <label for="answer-3b">Flour, tomato sauce, cheese, cherry tomatoes</label>
+        <br>
+        <input type="radio" id="answer-3c" name="answer-3" value="c">
+        <label for="answer-3c">Flour, sugar, eggs, butter</label>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+    <script src="quiz.js"></script>
+  </body>
 </html>
