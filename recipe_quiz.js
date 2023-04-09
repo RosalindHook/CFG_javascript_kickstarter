@@ -25,4 +25,4 @@ function welcome() {
 
 //event listener
 let welcomeFutureButton = document.getElementById("welcome-button");
-welcomeFutureButton.addEventListener("click", welcome);
+welcomeFutureButton.addEventListener("click", welcome());
