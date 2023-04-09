@@ -22,19 +22,6 @@ quizButton.addEventListener("click", function() {
   let type = prompt("What type of food are you in the mood for?\nPlease enter 1- Something savoury;\n2- Something sweet;\n3- Something meaty"); 
   let time = prompt("How much time do you have to cook?\nPlease enter 1- less than 30 minutes;\n2- 30-60 minutes;\n3- more than 60 minutes"); 
   let ingredients = prompt(" "What ingredients do you have to hand?\nPlease enter 1- flour, tomato sauce, cheese, cherry tomatoes;\n2- flour, sugar, eggs and butter;\n3- pasta, ground beef and tomato sauce");  
-                           
-    // Check if any input is null or empty
-  if (type == null || type.trim() === "" || time == null || time.trim() === "" || ingredients == null || ingredients.trim() === "") {
-    alert("Please answer all questions before submitting.");
-    return;
-  }
-
-  // Check if input is a number
-  if (isNaN(type) || isNaN(time) || isNaN(ingredients)) {
-    alert("Please enter a number for all questions.");
-    return;
-  }
-
   let score = parseInt(type) + parseInt(time) + parseInt(ingredients);
   
   takeQuiz(score);
