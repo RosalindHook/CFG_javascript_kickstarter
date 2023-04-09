@@ -8,7 +8,7 @@ function takeQuiz(type, time, ingredients) {
   } else {
     console.log("You should make pizza tonight! This versatile dish can be customised with your favorite toppings, making it perfect for when you're in the mood for something savoury. Plus, it's quick and easy to make, so you can have dinner on the table in no time.");
   }
-}
+};
 
 
 // event listener (click on quiz button in html file to get the pop up quiz function)
