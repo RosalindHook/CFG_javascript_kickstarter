@@ -1,6 +1,6 @@
 // takeQuiz function
 function takeQuiz(type, time, ingredients) {
-  let score = type + time + ingredients;
+  let score = parseInt(type) + parseInt(time) + parseInt(ingredients);
   if (score >= 8) {
     console.log("You should make lasagna tonight! This classic Italian dish is perfect for when you're in the mood for something meaty and savoury. With layers of pasta, cheese, and tomato sauce, lasagna is always a crowd-pleaser.");
   } else if (score >= 5) {
@@ -9,6 +9,7 @@ function takeQuiz(type, time, ingredients) {
     console.log("You should make pizza tonight! This versatile dish can be customised with your favorite toppings, making it perfect for when you're in the mood for something savoury. Plus, it's quick and easy to make, so you can have dinner on the table in no time.");
   }
 }
+
 
 // event listener (click on quiz button in html file to get the pop up quiz function)
 
